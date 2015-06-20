@@ -62,7 +62,7 @@ int main(){
     _mm_free(y);
     _mm_free(z);
 
-    // sse requires 32 bytes aligned memory
+    // avx requires 32 bytes aligned memory
     x = (float*)_mm_malloc(n*sizeof(float),32);
     y = (float*)_mm_malloc(n*sizeof(float),32);
     z = (float*)_mm_malloc(n*sizeof(float),32);
